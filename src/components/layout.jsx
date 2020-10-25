@@ -10,7 +10,6 @@ import useSeo from "../hooks/useSeo"
 const Layout = ({ children }) => {
   const seo = useSeo()
   const {
-    siteName,
     fallbackSeo: { title, description },
   } = seo
 
