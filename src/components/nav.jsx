@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
 
-const NavContainer = styled.nav`
+const Nav = styled.nav`
   display: flex;
   justify-content: center;
   padding-bottom: 3rem;
@@ -12,7 +12,7 @@ const NavContainer = styled.nav`
 `
 
 const NavLink = styled(Link)`
-  color: #fff;
+  color: #ffffff;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1rem;
@@ -28,17 +28,17 @@ const NavLink = styled(Link)`
   }
 `
 
-const Nav = () => {
+const Navegacion = () => {
   return (
-    <NavContainer>
+    <Nav>
       <NavLink to={"/"} activeClassName="pagina-actual">
         Inicio
       </NavLink>
       <NavLink to={"/nosotros"} activeClassName="pagina-actual">
         Nosotros
       </NavLink>
-    </NavContainer>
+    </Nav>
   )
 }
 
-export default Nav
+export default Navegacion
